@@ -3,27 +3,54 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FE11EC7525FA97650070AAFF /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE11EC7425FA97650070AAFF /* SnapKit.framework */; };
+		FE2197AE25FA7EEA00596F4A /* ListOfRocketsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE2197AD25FA7EEA00596F4A /* ListOfRocketsViewController.swift */; };
+		FE86675125FE149800D7FF19 /* DetailOfRocketsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE86675025FE149800D7FF19 /* DetailOfRocketsVC.swift */; };
 		FE90211925FA65FB00BCC4D9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE90211825FA65FB00BCC4D9 /* AppDelegate.swift */; };
 		FE90211B25FA65FB00BCC4D9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE90211A25FA65FB00BCC4D9 /* SceneDelegate.swift */; };
 		FE90211D25FA65FB00BCC4D9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE90211C25FA65FB00BCC4D9 /* ViewController.swift */; };
-		FE90212025FA65FB00BCC4D9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE90211E25FA65FB00BCC4D9 /* Main.storyboard */; };
 		FE90212225FA65FD00BCC4D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE90212125FA65FD00BCC4D9 /* Assets.xcassets */; };
 		FE90212525FA65FD00BCC4D9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE90212325FA65FD00BCC4D9 /* LaunchScreen.storyboard */; };
+		FECC0BAC25FA9A2B00AB95DF /* Pods_ModernRockets.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEA6A4B8E74E78FD485DCF3F /* Pods_ModernRockets.framework */; };
+		FECC0BBA25FAAF7300AB95DF /* RocketsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FECC0BB925FAAF7300AB95DF /* RocketsTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		FE11EC7725FA97650070AAFF /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		6E047DE309F55FBCB45B076A /* Pods-ModernRockets.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ModernRockets.debug.xcconfig"; path = "Target Support Files/Pods-ModernRockets/Pods-ModernRockets.debug.xcconfig"; sourceTree = "<group>"; };
+		AEA6A4B8E74E78FD485DCF3F /* Pods_ModernRockets.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ModernRockets.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC09F792276F37E44F2F5B64 /* Pods-ModernRockets.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ModernRockets.release.xcconfig"; path = "Target Support Files/Pods-ModernRockets/Pods-ModernRockets.release.xcconfig"; sourceTree = "<group>"; };
+		FE11EC6625FA84A70070AAFF /* RxSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RxSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE11EC6725FA84A70070AAFF /* SnapKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SnapKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE11EC6D25FA91690070AAFF /* RxCocoa.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RxCocoa.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE11EC6E25FA91690070AAFF /* RxRelay.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RxRelay.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE11EC7425FA97650070AAFF /* SnapKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SnapKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE2197AD25FA7EEA00596F4A /* ListOfRocketsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListOfRocketsViewController.swift; sourceTree = "<group>"; };
+		FE86675025FE149800D7FF19 /* DetailOfRocketsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailOfRocketsVC.swift; sourceTree = "<group>"; };
 		FE90211525FA65FB00BCC4D9 /* ModernRockets.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ModernRockets.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE90211825FA65FB00BCC4D9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FE90211A25FA65FB00BCC4D9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		FE90211C25FA65FB00BCC4D9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		FE90211F25FA65FB00BCC4D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FE90212125FA65FD00BCC4D9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FE90212425FA65FD00BCC4D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FE90212625FA65FD00BCC4D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FECC0BB925FAAF7300AB95DF /* RocketsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RocketsTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +58,119 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE11EC7525FA97650070AAFF /* SnapKit.framework in Frameworks */,
+				FECC0BAC25FA9A2B00AB95DF /* Pods_ModernRockets.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		66D8100A8CB427C72A0F5857 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6E047DE309F55FBCB45B076A /* Pods-ModernRockets.debug.xcconfig */,
+				DC09F792276F37E44F2F5B64 /* Pods-ModernRockets.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		B4FC712D41C0B6B8A59120F3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FE11EC7425FA97650070AAFF /* SnapKit.framework */,
+				FE11EC6D25FA91690070AAFF /* RxCocoa.framework */,
+				FE11EC6E25FA91690070AAFF /* RxRelay.framework */,
+				FE11EC6625FA84A70070AAFF /* RxSwift.framework */,
+				FE11EC6725FA84A70070AAFF /* SnapKit.framework */,
+				AEA6A4B8E74E78FD485DCF3F /* Pods_ModernRockets.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FE2197AB25FA7E9200596F4A /* ListOfRockets */ = {
+			isa = PBXGroup;
+			children = (
+				FE2197AD25FA7EEA00596F4A /* ListOfRocketsViewController.swift */,
+				FECC0BB925FAAF7300AB95DF /* RocketsTableViewCell.swift */,
+			);
+			path = ListOfRockets;
+			sourceTree = "<group>";
+		};
+		FE2D318125FA6893002F85E0 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				FE2D318325FA68AE002F85E0 /* LaunchScreen */,
+				FE2D318225FA68A8002F85E0 /* Image */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		FE2D318225FA68A8002F85E0 /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				FE90212125FA65FD00BCC4D9 /* Assets.xcassets */,
+			);
+			path = Image;
+			sourceTree = "<group>";
+		};
+		FE2D318325FA68AE002F85E0 /* LaunchScreen */ = {
+			isa = PBXGroup;
+			children = (
+				FE90212325FA65FD00BCC4D9 /* LaunchScreen.storyboard */,
+			);
+			path = LaunchScreen;
+			sourceTree = "<group>";
+		};
+		FE2D318425FA6999002F85E0 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				FE90212625FA65FD00BCC4D9 /* Info.plist */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		FE2D318525FA69CB002F85E0 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				FE90211825FA65FB00BCC4D9 /* AppDelegate.swift */,
+				FE2D318F25FA6CEC002F85E0 /* Model */,
+				FE2D319025FA6CFB002F85E0 /* View-ViewModel */,
+				FE2D319125FA6D18002F85E0 /* Control */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		FE2D318F25FA6CEC002F85E0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FE2D319025FA6CFB002F85E0 /* View-ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				FECC0BB825FAA98100AB95DF /* DetailsOfRockets */,
+				FE2197AB25FA7E9200596F4A /* ListOfRockets */,
+			);
+			path = "View-ViewModel";
+			sourceTree = "<group>";
+		};
+		FE2D319125FA6D18002F85E0 /* Control */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Control;
+			sourceTree = "<group>";
+		};
 		FE90210C25FA65FB00BCC4D9 = {
 			isa = PBXGroup;
 			children = (
 				FE90211725FA65FB00BCC4D9 /* ModernRockets */,
 				FE90211625FA65FB00BCC4D9 /* Products */,
+				66D8100A8CB427C72A0F5857 /* Pods */,
+				B4FC712D41C0B6B8A59120F3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +185,21 @@
 		FE90211725FA65FB00BCC4D9 /* ModernRockets */ = {
 			isa = PBXGroup;
 			children = (
-				FE90211825FA65FB00BCC4D9 /* AppDelegate.swift */,
+				FE2D318525FA69CB002F85E0 /* Application */,
+				FE2D318425FA6999002F85E0 /* Support */,
+				FE2D318125FA6893002F85E0 /* Resources */,
 				FE90211A25FA65FB00BCC4D9 /* SceneDelegate.swift */,
 				FE90211C25FA65FB00BCC4D9 /* ViewController.swift */,
-				FE90211E25FA65FB00BCC4D9 /* Main.storyboard */,
-				FE90212125FA65FD00BCC4D9 /* Assets.xcassets */,
-				FE90212325FA65FD00BCC4D9 /* LaunchScreen.storyboard */,
-				FE90212625FA65FD00BCC4D9 /* Info.plist */,
 			);
 			path = ModernRockets;
+			sourceTree = "<group>";
+		};
+		FECC0BB825FAA98100AB95DF /* DetailsOfRockets */ = {
+			isa = PBXGroup;
+			children = (
+				FE86675025FE149800D7FF19 /* DetailOfRocketsVC.swift */,
+			);
+			path = DetailsOfRockets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +209,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FE90212925FA65FD00BCC4D9 /* Build configuration list for PBXNativeTarget "ModernRockets" */;
 			buildPhases = (
+				24A751EB0B7ABBD811903046 /* [CP] Check Pods Manifest.lock */,
 				FE90211125FA65FB00BCC4D9 /* Sources */,
 				FE90211225FA65FB00BCC4D9 /* Frameworks */,
 				FE90211325FA65FB00BCC4D9 /* Resources */,
+				26BD6F460C08851E6B3B038F /* [CP] Embed Pods Frameworks */,
+				FE11EC7725FA97650070AAFF /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -126,17 +264,61 @@
 			files = (
 				FE90212525FA65FD00BCC4D9 /* LaunchScreen.storyboard in Resources */,
 				FE90212225FA65FD00BCC4D9 /* Assets.xcassets in Resources */,
-				FE90212025FA65FB00BCC4D9 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		24A751EB0B7ABBD811903046 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ModernRockets-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		26BD6F460C08851E6B3B038F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ModernRockets/Pods-ModernRockets-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ModernRockets/Pods-ModernRockets-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ModernRockets/Pods-ModernRockets-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		FE90211125FA65FB00BCC4D9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE86675125FE149800D7FF19 /* DetailOfRocketsVC.swift in Sources */,
+				FE2197AE25FA7EEA00596F4A /* ListOfRocketsViewController.swift in Sources */,
+				FECC0BBA25FAAF7300AB95DF /* RocketsTableViewCell.swift in Sources */,
 				FE90211D25FA65FB00BCC4D9 /* ViewController.swift in Sources */,
 				FE90211925FA65FB00BCC4D9 /* AppDelegate.swift in Sources */,
 				FE90211B25FA65FB00BCC4D9 /* SceneDelegate.swift in Sources */,
@@ -146,14 +328,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		FE90211E25FA65FB00BCC4D9 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				FE90211F25FA65FB00BCC4D9 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		FE90212325FA65FD00BCC4D9 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -283,12 +457,13 @@
 		};
 		FE90212A25FA65FD00BCC4D9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6E047DE309F55FBCB45B076A /* Pods-ModernRockets.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4DM8L8KQP9;
-				INFOPLIST_FILE = ModernRockets/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/ModernRockets/Support/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,12 +477,13 @@
 		};
 		FE90212B25FA65FD00BCC4D9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DC09F792276F37E44F2F5B64 /* Pods-ModernRockets.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4DM8L8KQP9;
-				INFOPLIST_FILE = ModernRockets/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/ModernRockets/Support/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
