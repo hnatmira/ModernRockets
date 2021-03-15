@@ -8,7 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		FE11EC7525FA97650070AAFF /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE11EC7425FA97650070AAFF /* SnapKit.framework */; };
-		FE2197AE25FA7EEA00596F4A /* ListOfRocketsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE2197AD25FA7EEA00596F4A /* ListOfRocketsViewController.swift */; };
+		FE2197AE25FA7EEA00596F4A /* RocketListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE2197AD25FA7EEA00596F4A /* RocketListVC.swift */; };
+		FE26A55E25FFE2DB00B15671 /* RocketListVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE26A55D25FFE2DB00B15671 /* RocketListVM.swift */; };
+		FE26A56125FFE35300B15671 /* Rocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE26A56025FFE35300B15671 /* Rocket.swift */; };
 		FE86675125FE149800D7FF19 /* DetailOfRocketsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE86675025FE149800D7FF19 /* DetailOfRocketsVC.swift */; };
 		FE90211925FA65FB00BCC4D9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE90211825FA65FB00BCC4D9 /* AppDelegate.swift */; };
 		FE90211B25FA65FB00BCC4D9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE90211A25FA65FB00BCC4D9 /* SceneDelegate.swift */; };
@@ -41,7 +43,9 @@
 		FE11EC6D25FA91690070AAFF /* RxCocoa.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RxCocoa.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE11EC6E25FA91690070AAFF /* RxRelay.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RxRelay.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE11EC7425FA97650070AAFF /* SnapKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SnapKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		FE2197AD25FA7EEA00596F4A /* ListOfRocketsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListOfRocketsViewController.swift; sourceTree = "<group>"; };
+		FE2197AD25FA7EEA00596F4A /* RocketListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RocketListVC.swift; sourceTree = "<group>"; };
+		FE26A55D25FFE2DB00B15671 /* RocketListVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RocketListVM.swift; sourceTree = "<group>"; };
+		FE26A56025FFE35300B15671 /* Rocket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rocket.swift; sourceTree = "<group>"; };
 		FE86675025FE149800D7FF19 /* DetailOfRocketsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailOfRocketsVC.swift; sourceTree = "<group>"; };
 		FE90211525FA65FB00BCC4D9 /* ModernRockets.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ModernRockets.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE90211825FA65FB00BCC4D9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -91,8 +95,9 @@
 		FE2197AB25FA7E9200596F4A /* ListOfRockets */ = {
 			isa = PBXGroup;
 			children = (
-				FE2197AD25FA7EEA00596F4A /* ListOfRocketsViewController.swift */,
+				FE2197AD25FA7EEA00596F4A /* RocketListVC.swift */,
 				FECC0BB925FAAF7300AB95DF /* RocketsTableViewCell.swift */,
+				FE26A55D25FFE2DB00B15671 /* RocketListVM.swift */,
 			);
 			path = ListOfRockets;
 			sourceTree = "<group>";
@@ -144,6 +149,7 @@
 		FE2D318F25FA6CEC002F85E0 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				FE26A56025FFE35300B15671 /* Rocket.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -317,11 +323,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				FE86675125FE149800D7FF19 /* DetailOfRocketsVC.swift in Sources */,
-				FE2197AE25FA7EEA00596F4A /* ListOfRocketsViewController.swift in Sources */,
+				FE2197AE25FA7EEA00596F4A /* RocketListVC.swift in Sources */,
 				FECC0BBA25FAAF7300AB95DF /* RocketsTableViewCell.swift in Sources */,
 				FE90211D25FA65FB00BCC4D9 /* ViewController.swift in Sources */,
+				FE26A55E25FFE2DB00B15671 /* RocketListVM.swift in Sources */,
 				FE90211925FA65FB00BCC4D9 /* AppDelegate.swift in Sources */,
 				FE90211B25FA65FB00BCC4D9 /* SceneDelegate.swift in Sources */,
+				FE26A56125FFE35300B15671 /* Rocket.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

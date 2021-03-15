@@ -1,5 +1,5 @@
 //
-//  ListOfRocketsViewController.swift
+//  RocketListVC.swift
 //  ModernRockets
 //
 //  Created by Miroslav Hnát on 11.03.2021.
@@ -8,12 +8,15 @@
 import UIKit
 import SnapKit
 
-class ListOfRocketsViewController: UIViewController {
+
+class RocketListVC: UIViewController {
     
     private let tableView = UITableView()
     private let label = UILabel()
     private let imageView = UIImageView()
     
+    
+    let viewModel = RocketListVM()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,6 +24,9 @@ class ListOfRocketsViewController: UIViewController {
         arrangeSubviews()
         layout()
         setUpNavigationBar()
+        viewModel.fetchData(callback: { [weak self] in
+            self?.tableView.reloadData()
+        })
     }
     
     
@@ -51,6 +57,9 @@ class ListOfRocketsViewController: UIViewController {
     // just for test Fetch data
     @objc func test() {
         print("Fetching JSON data")
+        viewModel.fetchData(callback: { [weak self] in
+            self?.tableView.reloadData()
+        })
     }
     
     
@@ -67,17 +76,18 @@ class ListOfRocketsViewController: UIViewController {
     }
 }
 
-extension ListOfRocketsViewController: UITableViewDataSource, UITableViewDelegate {
+extension RocketListVC: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 6
+        return viewModel.rockets.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "RocketsTableViewCell", for: indexPath) as? RocketsTableViewCell else {
             return UITableViewCell()
         }
-        cell.textLabel?.text = label.text
-        cell.imageView?.image = imageView.image
+        
+        let rocket = viewModel.rockets[indexPath.row]
+        cell.textLabel?.text = rocket.rocketName
         return cell
     }
     
