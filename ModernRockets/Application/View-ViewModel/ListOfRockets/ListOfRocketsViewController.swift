@@ -45,7 +45,14 @@ class ListOfRocketsViewController: UIViewController {
     private func setUpNavigationBar() {
         title = "Modern Rockets"
         navigationItem.rightBarButtonItem = UIBarButtonItem.init(barButtonSystemItem: .add, target: nil, action: nil)
+        navigationItem.leftBarButtonItem = UIBarButtonItem.init(barButtonSystemItem: .refresh, target: self, action: #selector(test))
     }
+    
+    // just for test Fetch data
+    @objc func test() {
+        print("Fetching JSON data")
+    }
+    
     
     private func arrangeSubviews() {
         
@@ -73,4 +80,10 @@ extension ListOfRocketsViewController: UITableViewDataSource, UITableViewDelegat
         cell.imageView?.image = imageView.image
         return cell
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+        navigationController?.pushViewController(DetailOfRocketsVC(), animated: true)
+    }
+    
 }

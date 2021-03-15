@@ -1,5 +1,5 @@
 //
-//  DeatilOfRocketsVC.swift
+//  DetailOfRocketsVC.swift
 //  ModernRockets
 //
 //  Created by Miroslav Hnát on 14.03.2021.
@@ -8,7 +8,7 @@
 import UIKit
 import SnapKit
 
-class DeatilOfRocketsVC: UIViewController {
+class DetailOfRocketsVC: UIViewController {
 
     private let scrollView = UIScrollView()
     //private let nameOfRocket = UILabel()
