@@ -14,7 +14,7 @@ class RocketListVC: UIViewController {
     private let tableView = UITableView()
     private let label = UILabel()
     private let imageView = UIImageView()
-    let viewModel = RocketListVM()
+    private let viewModel = RocketListVM()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,37 +29,32 @@ class RocketListVC: UIViewController {
 
     private func setupUI() {
 
-        //register cell
         tableView.register(RocketsTableViewCell.self, forCellReuseIdentifier: "RocketsTableViewCell")
         tableView.dataSource = self
         tableView.delegate = self
         tableView.tableFooterView = UIView()
         tableView.rowHeight = UITableView.automaticDimension
         tableView.estimatedRowHeight = 200
-        //tableView.backgroundView = UIImageView(image: UIImage(named: "background_rocket.png"))
+        tableView.backgroundColor = UIColor(
+            displayP3Red: 0.04578196336,
+            green: 0.05871117837,
+            blue: 0.2002516868,
+            alpha: 0.7420529735
+        )
 
-        imageView.image = UIImage(named: "rocket_image.jpg")
-        //label.text = "Rockets Label"
         label.numberOfLines = 0
     }
-    // func for Setup navigation bar
+
     private func setUpNavigationBar() {
         title = "Modern Rockets"
-        navigationItem.rightBarButtonItem = UIBarButtonItem.init(
-            barButtonSystemItem: .add,
-            target: nil,
-            action: nil
-        )
         navigationItem.leftBarButtonItem = UIBarButtonItem(
             barButtonSystemItem: .refresh,
             target: self,
-            action: #selector(test)
+            action: #selector(fetchRockets)
         )
     }
 
-    // just for test Fetch data
-    @objc func test() {
-        print("Fetching JSON data")
+    @objc func fetchRockets() {
         viewModel.fetchData(callback: { [weak self] in
             self?.tableView.reloadData()
         })
@@ -88,12 +83,13 @@ extension RocketListVC: UITableViewDataSource, UITableViewDelegate {
             return UITableViewCell()
         }
         let rocket = viewModel.rockets[indexPath.row]
-        cell.textLabel?.text = rocket.rocketName
-        //cell.imageView?.af.setImage(withURL: URL(string: rocket.flickrImages[0])!)
+        cell.setUp(with: rocket)
         return cell
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
-        navigationController?.pushViewController(DetailOfRocketsVC(), animated: true)
+        let rocket = viewModel.rockets[indexPath.row]
+        let viewController = RocketDetailVC(viewModel: RocketDetailVM(rocket: rocket))
+        navigationController?.pushViewController(viewController, animated: true)
     }
 }

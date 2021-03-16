@@ -18,6 +18,23 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
         guard let windowScene = (scene as? UIWindowScene) else { return }
 
+        let appearance = UINavigationBarAppearance()
+        appearance.backgroundColor = UIColor(
+            displayP3Red: 0.04578196336,
+            green: 0.05871117837,
+            blue: 0.2002516868,
+            alpha: 0.7420529735
+        )
+
+        appearance.titleTextAttributes = [.foregroundColor: UIColor.white]
+        appearance.largeTitleTextAttributes = [.foregroundColor: UIColor.white]
+
+        UINavigationBar.appearance().tintColor = .white
+        UINavigationBar.appearance().barTintColor = .white
+        UINavigationBar.appearance().standardAppearance = appearance
+        UINavigationBar.appearance().compactAppearance = appearance
+        UINavigationBar.appearance().scrollEdgeAppearance = appearance
+
         let rootViewController = RocketListVC()
         let navigationController = UINavigationController(rootViewController: rootViewController)
         window = UIWindow(windowScene: windowScene)
