@@ -221,6 +221,7 @@
 				FE90211325FA65FB00BCC4D9 /* Resources */,
 				26BD6F460C08851E6B3B038F /* [CP] Embed Pods Frameworks */,
 				FE11EC7725FA97650070AAFF /* Embed Frameworks */,
+				FE26A5802600B74400B15671 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -314,6 +315,23 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ModernRockets/Pods-ModernRockets-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		FE26A5802600B74400B15671 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nif which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 

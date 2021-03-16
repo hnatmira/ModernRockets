@@ -7,13 +7,12 @@
 
 import Foundation
 
-
 struct Rocket: Decodable {
     let id: Int
     let rocketName: String
     let flickrImages: [String]
     let description: String
-    
+
     enum CodingKeys: String, CodingKey {
         case id = "id"
         case rocketName = "rocket_name"

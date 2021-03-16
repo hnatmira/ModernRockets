@@ -9,5 +9,6 @@ target 'ModernRockets' do
 	pod 'RxSwift', '6.1.0'
 	pod 'RxCocoa', '6.1.0' 
 	pod 'SnapKit', '~> 5.0.0'
-	pod 'Nuke', '~> 9.3'
+	pod 'AlamofireImage', '~> 4.1'
+	pod 'SwiftLint'
 end
